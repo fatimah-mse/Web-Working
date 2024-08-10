@@ -1,0 +1,15 @@
+.FM-Hero {
+    height: calc(100vh - 74px);
+    margin-top: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.FM-Hero img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

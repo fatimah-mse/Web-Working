@@ -1,0 +1,13 @@
+.FM-footer {
+    background-color: #99c1e2;
+}
+.FM-footer p {
+    line-height: 40px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+.FM-footer a{
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+}

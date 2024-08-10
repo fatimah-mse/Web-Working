@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  font-style: normal;
+  direction: rtl;
+}
+h3 {
+  line-height: 40px !important;
+}
+#FM-section-2 ,
+#FM-section-3 ,
+#FM-section-4 ,
+.FM-section-5,
+.FM-url-page {
+  margin-top: 74px;
+}
+.FM-input {
+  border-color: #99c1e2;
+  width: 50%;
+}
+table {
+  margin-top: 100px;
+  direction: ltr;
+  text-align: center;
+}
+.hide {
+  display: none !important;
+}
+.api-sec-1 , .FM-card {
+  background-color: #cfe7fa !important;
+}
+.FM-card {
+  min-height: 440px;
+}
