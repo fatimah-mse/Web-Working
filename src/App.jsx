@@ -11,6 +11,15 @@ import { useEffect } from 'react'
 import Swal from 'sweetalert2'
 import URLPage from './pages/URLPage'
 import API from './pages/API'
+import { useLocation } from 'react-router-dom'
+
+function ScrollToTop() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
+}
   
 function App() {
 
@@ -30,6 +39,7 @@ function App() {
 
   return (
     <>
+    <ScrollToTop />
     <URLarray />
     <Routes>
       <Route path="/" element={<Alert />} />
