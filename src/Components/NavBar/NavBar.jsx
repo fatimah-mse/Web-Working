@@ -8,7 +8,7 @@ export default function NavBar() {
     <>
       <Navbar expand='lg' className="FM-nav px-3 shadow" fixed="top">
         <Container>
-          <Link to="/" className='FM-navbar-logo text-decoration-none fs-4 m-0'><img className='mb-2 ms-4' src="./web-icon-logo.png" />كيف يعمل الويب</Link>
+          <Link to="/" className='FM-navbar-logo text-decoration-none fs-4 m-0 text-dark'><img className='mb-2 ms-4' src="./web-icon-logo.png" />كيف يعمل الويب</Link>
           <Navbar.Toggle aria-controls='offcanvasNavbar-expand-lg' />
           <Navbar.Offcanvas className='sidebar'
             id='offcanvasNavbar-expand-lg'
