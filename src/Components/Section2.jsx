@@ -18,7 +18,7 @@ export default function Section2() {
             confirmButtonText: 'إرسال الطلب'
             }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = '/DNS'
+                window.location.href = '/Web-Working/DNS'
             }
         });
     }

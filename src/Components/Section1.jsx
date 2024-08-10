@@ -32,7 +32,7 @@ export default function Section1() {
                 confirmButtonText: "المتابعة!"
                 }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href = '/cash'
+                    window.location.href = '/Web-Working/cash'
                 }
             })
         }

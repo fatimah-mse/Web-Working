@@ -11,7 +11,7 @@ export default function Alert() {
         confirmButtonText: "نعم، أنا مستعد!"
         }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = "/main"
+            window.location.href = "/Web-Working/main"
         }
     });
 }

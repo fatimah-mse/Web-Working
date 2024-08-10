@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './NavBar.css'
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap'
 
@@ -17,8 +18,8 @@ export default function NavBar() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="/api" className='nav-link me-lg-3 fs-5'>API</Nav.Link>
-                <Nav.Link href="/url-page" className='nav-link me-lg-3 fs-5'>الروابط التي زرتها مسبقاً</Nav.Link>
+                <Link to="/api" className='nav-link me-lg-3 fs-5'>API</Link>
+                <Link to="/url-page" className='nav-link me-lg-3 fs-5'>الروابط التي زرتها مسبقاً</Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

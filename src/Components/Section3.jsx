@@ -16,7 +16,7 @@ export default function Section3() {
         confirmButtonText: 'طلب'
     }).then((result) => {
         if (result.isConfirmed) {
-          window.location.href = '/server';
+          window.location.href = '/Web-Working/server';
         }
     });
 }

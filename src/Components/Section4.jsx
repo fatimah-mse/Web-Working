@@ -27,7 +27,7 @@ export default function Section4() {
             confirmButtonText: 'استكمال'
             }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = '/response'
+                window.location.href = '/Web-Working/response'
             }
         });
     }
