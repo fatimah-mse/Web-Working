@@ -2,9 +2,12 @@ import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import SectionComponent from './SectionComponent'
 import { H3ArraySection4 } from '../data/URLarray'
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom'
 
 export default function Section4() {
+
+    const navigate = useNavigate()
 
     function save () {
         const storedArr = JSON.parse(localStorage.getItem('URLarr') || '[]');
@@ -27,7 +30,7 @@ export default function Section4() {
             confirmButtonText: 'استكمال'
             }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = '/Web-Working/response'
+                navigate("/response")
             }
         });
     }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Col, Container, Row } from 'react-bootstrap'
 import Swal from 'sweetalert2'
 import SectionComponent from './SectionComponent'
@@ -8,6 +9,7 @@ export default function Section1() {
 
     const [urlValue, setUrlValue] = useState('')
     let [variable] = useState('')
+    const navigate = useNavigate()
 
     useEffect(() => {
         variable = urlValue
@@ -32,7 +34,7 @@ export default function Section1() {
                 confirmButtonText: "المتابعة!"
                 }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href = '/Web-Working/cash'
+                    navigate("/cash")
                 }
             })
         }

@@ -2,11 +2,13 @@ import React from 'react'
 import SectionComponent from './SectionComponent'
 import { H3ArraySection2 } from '../data/URLarray'
 import { Container, Row } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 import BrowserCashComponent from './BrowserCashComponent'
 import Swal from 'sweetalert2'
 
 export default function Section2() {
     const arr = JSON.parse(localStorage.getItem('URLarr')) || []
+    const navigate = useNavigate()
 
     function req () {
         Swal.fire({
@@ -18,7 +20,7 @@ export default function Section2() {
             confirmButtonText: 'إرسال الطلب'
             }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = '/Web-Working/DNS'
+                navigate("/DNS")
             }
         });
     }

@@ -2,9 +2,12 @@ import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import SectionComponent from './SectionComponent'
 import { H3ArraySection3 } from '../data/URLarray'
+import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
 export default function Section3() {
+
+  const navigate = useNavigate()
 
   function dns() {
     Swal.fire({
@@ -16,7 +19,7 @@ export default function Section3() {
         confirmButtonText: 'طلب'
     }).then((result) => {
         if (result.isConfirmed) {
-          window.location.href = '/Web-Working/server';
+          navigate("/server")
         }
     });
 }
